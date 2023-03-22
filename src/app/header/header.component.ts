@@ -8,7 +8,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class HeaderComponent {
   @Output() activeSection = new EventEmitter<string>();
 
-  onNavigate(page:string){
+  onNavigate(page: string){
     this.activeSection.emit(page);
   }
 }
