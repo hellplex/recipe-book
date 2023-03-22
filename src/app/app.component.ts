@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe-book';
-  activeSection: 'recipes' | 'shopping' = 'recipes';
+  activeSection: string = 'recipes';
+
+  onNavigateTo(page: string){
+    this.activeSection = page;
+  }
  
 }
