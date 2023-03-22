@@ -2,7 +2,6 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            active section: {{ activeSection }}
             <app-recipes *ngIf="activeSection === 'recipes'"></app-recipes>
             <app-shopping-list  *ngIf="activeSection === 'shopping'"></app-shopping-list>
         </div>
